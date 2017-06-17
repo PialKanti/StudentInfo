@@ -1,5 +1,5 @@
 # StudentInfo
-A sample Angular JS Single Page Application(SPA)
+A sample AngularJS Single Page Application(SPA)
 
 ## Build with
 - [AngularJS 1.2.5](https://angular.io/)
