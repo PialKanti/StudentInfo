@@ -1,0 +1,27 @@
+<div class="col-md-6 col-md-offset-3" data-ng-controller="regController">
+    <form ng-submit="newStudent()" ng-hide="formHide" class="regform">
+        <div class="form-group">
+            <label for="name">Student's name</label>
+            <input type="text" class="form-control" id="name" data-ng-model="stdname" placeholder="Name..."> </div>
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="roll">Roll no</label>
+                <input type="text" class="form-control" id="roll" data-ng-model="stdroll" placeholder="Roll No..."> </div>
+            <div class="form-group col-md-6">
+                <label for="dept">Department</label>
+                <select class="form-control" id="dept" data-ng-model="department">
+                    <option>EEE</option>
+                    <option>CSE</option>
+                    <option>ME</option>
+                    <option>CE</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="adr">Address</label>
+            <textarea class="form-control" id="adr" data-ng-model="address"></textarea>
+        </div>
+        <input type="submit" class="btn btn-success"> </form>
+
+    <div class="alert alert-success" ng-show="submissionSuccess" role="alert"> <strong>Success!</strong> Student details inserted. </div>
+</div>

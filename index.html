@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+    <script src="lib/js/jquery-3.0.0.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="app/route/mainAppRouter.js"></script>
+    <script src="app/controller/controllers.js"></script>
+    <script src="app/services/studentServices.js"></script>
+    <!--<link rel="stylesheet" href="lib/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/css/bootstrap-theme.css" />-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app/css/main.css" />
+    <title>A demo Angular JS app</title>
+</head>
+
+<body ng-app="studentInfo">
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"> <span><img src="app/images/people.png"/></span> Student Info </a>
+            </div>
+            <ul class="nav nav-pills navbar-right" ng-controller="HeaderController">
+                <li role="presentation" ng-class="getClass('/registration')"><a href="#/registration">Registration</a></li>
+                <li role="presentation" ng-class="getClass('/student')"><a href="#/student">Student Details</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4">
+            <h1>Student Info</h1> </div>
+        <div class="studentInfo" ng-view></div>
+    </div>
+</body>
+
+</html>
