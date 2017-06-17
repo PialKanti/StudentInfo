@@ -6,6 +6,4 @@ A sample Angular JS Single Page Application(SPA)
 - [Bootstrap 3.3.7](http://getbootstrap.com/)
 
 ## Demo
-![demo](http://imgur.com/a/sMd37)
-
-
+![demo](http://i.imgur.com/5KLPIT9.gif)
