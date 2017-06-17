@@ -5,5 +5,9 @@ A sample Angular JS Single Page Application(SPA)
 - [AngularJS 1.2.5](https://angular.io/)
 - [Bootstrap 3.3.7](http://getbootstrap.com/)
 
+## Build with
+- Insert student details without reloading whole page.
+- Also delete single student entry without reloading page.
+
 ## Demo
 ![demo](http://i.imgur.com/5KLPIT9.gif)
